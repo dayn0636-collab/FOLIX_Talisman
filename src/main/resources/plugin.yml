@@ -1,0 +1,21 @@
+name: Talismans
+version: '1.0.0'
+main: ru.example.talismans.TalismansPlugin
+api-version: '1.20'
+author: Example
+description: Расходуемые тотемы бессмертия — талисманы.
+commands:
+  talisman:
+    description: Управление талисманами.
+    usage: /talisman <give|list|reload>
+    aliases: [talis]
+permissions:
+  talismans.use:
+    description: Позволяет талисманам срабатывать при смерти.
+    default: true
+  talismans.give:
+    description: Выдача талисманов.
+    default: op
+  talismans.reload:
+    description: Перезагрузка конфигурации.
+    default: op
